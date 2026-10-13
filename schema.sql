@@ -1,0 +1,113 @@
+CREATE DATABASE bacarro_grocery_db;
+USE grocery_db;
+
+CREATE TABLE grocery_items (
+    product_id INT PRIMARY KEY,
+    product_name VARCHAR(100),
+    product_brand VARCHAR(100),
+    category VARCHAR(50),
+    price INT,
+    product_quantity INT,
+    expiration_date DATE
+);
+
+INSERT INTO grocery_items VALUES (1, 'Guaraná Antarctica Soda 2L', 'Guaraná Antarctica', 'Beverages', 150, 80, '2027-04-15');
+INSERT INTO grocery_items VALUES (2, 'Bauducco Chocottone 400g', 'Bauducco', 'Bakery', 320, 45, '2026-12-25');
+INSERT INTO grocery_items VALUES (3, 'Yoki Farofa Pronta 500g', 'Yoki', 'Grains & Flour', 180, 60, '2027-08-10');
+INSERT INTO grocery_items VALUES (4, 'Pilão Coffee 500g', 'Pilão', 'Beverages', 260, 50, '2027-02-20');
+INSERT INTO grocery_items VALUES (5, 'Garoto Caixa de Bombom 250g', 'Garoto', 'Confectionery', 210, 75, '2026-11-30');
+INSERT INTO grocery_items VALUES (6, 'Yoki Pão de Queijo Mix 250g', 'Yoki', 'Baking Mixes', 140, 90, '2027-06-18');
+INSERT INTO grocery_items VALUES (7, 'Nescau Achocolatado 370g', 'Nestlé Brasil', 'Beverages', 190, 65, '2027-09-05');
+INSERT INTO grocery_items VALUES (8, 'Lacta Bis Ao Leite 126g', 'Lacta', 'Confectionery', 110, 100, '2026-10-12');
+INSERT INTO grocery_items VALUES (9, 'Bauducco Wafer Morango 140g', 'Bauducco', 'Snacks', 85, 120, '2027-01-22');
+INSERT INTO grocery_items VALUES (10, 'Melitta Café Tradicional 500g', 'Melitta', 'Beverages', 270, 40, '2027-05-14');
+INSERT INTO grocery_items VALUES (11, '3 Corações Café Moído 500g', '3 Corações', 'Beverages', 250, 55, '2027-07-11');
+INSERT INTO grocery_items VALUES (12, 'Yoki Pipoca Butter 100g', 'Yoki', 'Snacks', 75, 110, '2027-03-19');
+INSERT INTO grocery_items VALUES (13, 'Bauducco Torrada Tradicional 140g', 'Bauducco', 'Bakery', 95, 85, '2027-02-01');
+INSERT INTO grocery_items VALUES (14, 'Passatempo Chocolate 130g', 'Nestlé Brasil', 'Biscuits', 60, 140, '2026-12-10');
+INSERT INTO grocery_items VALUES (15, 'Kicaldo Feijão Preto 1kg', 'Kicaldo', 'Grains & Pulses', 220, 95, '2027-11-05');
+INSERT INTO grocery_items VALUES (16, 'Camil Arroz Branco 5kg', 'Camil', 'Grains & Pulses', 450, 40, '2028-01-15');
+INSERT INTO grocery_items VALUES (17, 'Liza Óleo de Soja 900ml', 'Liza', 'Oils & Condiments', 130, 70, '2027-05-28');
+INSERT INTO grocery_items VALUES (18, 'Qualy Manteiga com Sal 500g', 'Qualy', 'Dairy', 210, 35, '2026-11-15');
+INSERT INTO grocery_items VALUES (19, 'Catupiry Requeijão Cremoso 200g', 'Catupiry', 'Dairy', 240, 30, '2026-10-20');
+INSERT INTO grocery_items VALUES (20, 'Itambé Leite Condensado 395g', 'Itambé', 'Dairy', 115, 80, '2027-04-02');
+INSERT INTO grocery_items VALUES (21, 'Mococa Creme de Leite 200g', 'Mococa', 'Dairy', 70, 100, '2027-03-14');
+INSERT INTO grocery_items VALUES (22, 'Sonho de Valsa Bonbon 1kg', 'Lacta', 'Confectionery', 680, 25, '2027-08-30');
+INSERT INTO grocery_items VALUES (23, 'Ouro Branco Bonbon 1kg', 'Lacta', 'Confectionery', 680, 25, '2027-08-30');
+INSERT INTO grocery_items VALUES (24, 'Sazón Tempero Carnes 60g', 'Sazón', 'Spices', 80, 150, '2027-12-01');
+INSERT INTO grocery_items VALUES (25, 'Arisco Tempero Alho e Sal 300g', 'Arisco', 'Spices', 90, 110, '2027-10-18');
+INSERT INTO grocery_items VALUES (26, 'Cepera Extrato de Tomate 340g', 'Cepera', 'Sauces', 85, 90, '2027-06-25');
+INSERT INTO grocery_items VALUES (27, 'Predilecta Goiabada 300g', 'Predilecta', 'Sweets', 125, 60, '2027-09-12');
+INSERT INTO grocery_items VALUES (28, 'Maguary Suco de Caju 500ml', 'Maguary', 'Beverages', 160, 45, '2027-05-04');
+INSERT INTO grocery_items VALUES (29, 'Mate Leão Chá Gelado 1.5L', 'Mate Leão', 'Beverages', 140, 70, '2027-02-17');
+INSERT INTO grocery_items VALUES (30, 'Skol Cerveja Pilsen 350ml', 'Skol', 'Beverages', 80, 200, '2027-01-10');
+INSERT INTO grocery_items VALUES (31, 'Brahma Chopp 350ml', 'Brahma', 'Beverages', 85, 180, '2027-01-15');
+INSERT INTO grocery_items VALUES (32, 'Antarctica Cerveja 350ml', 'Antarctica', 'Beverages', 80, 160, '2027-01-20');
+INSERT INTO grocery_items VALUES (33, 'Pitú Cachaça 965ml', 'Pitú', 'Beverages', 390, 30, '2029-12-31');
+INSERT INTO grocery_items VALUES (34, '51 Cachaça Pirassununga 965ml', 'Cachaça 51', 'Beverages', 410, 35, '2029-12-31');
+INSERT INTO grocery_items VALUES (35, 'Fogo da Serra Farofa 400g', 'Fogo da Serra', 'Grains & Flour', 160, 50, '2027-07-22');
+INSERT INTO grocery_items VALUES (36, 'Adria Macarrão Espaguete 500g', 'Adria', 'Pasta', 95, 105, '2027-11-30');
+INSERT INTO grocery_items VALUES (37, 'Renata Biscoito Cream Cracker 200g', 'Renata', 'Biscuits', 70, 130, '2027-03-25');
+INSERT INTO grocery_items VALUES (38, 'Dori Amendoim Japones 150g', 'Dori', 'Snacks', 65, 140, '2027-04-18');
+INSERT INTO grocery_items VALUES (39, 'Santa Helena Paçoquita 200g', 'Santa Helena', 'Confectionery', 130, 95, '2027-08-05');
+INSERT INTO grocery_items VALUES (40, 'Fugini Molho de Tomate 300g', 'Fugini', 'Sauces', 50, 160, '2027-05-19');
+INSERT INTO grocery_items VALUES (41, 'Hemmer Azeitona Verde 160g', 'Hemmer', 'Sauces', 175, 40, '2027-10-08');
+INSERT INTO grocery_items VALUES (42, 'Vigor Iogurte Natural 170g', 'Vigor', 'Dairy', 60, 50, '2026-11-02');
+INSERT INTO grocery_items VALUES (43, 'Batavo Leite Integral 1L', 'Batavo', 'Dairy', 105, 90, '2026-12-14');
+INSERT INTO grocery_items VALUES (44, 'Elegê Leite Desnatado 1L', 'Elegê', 'Dairy', 105, 85, '2026-12-18');
+INSERT INTO grocery_items VALUES (45, 'Piracanjuba Leite Zero Lactose 1L', 'Piracanjuba', 'Dairy', 125, 75, '2026-12-28');
+INSERT INTO grocery_items VALUES (46, 'Sococo Leite de Coco 200ml', 'Sococo', 'Cooking', 110, 80, '2027-09-01');
+INSERT INTO grocery_items VALUES (47, 'Menina Coco Ralado 100g', 'Menina', 'Baking Mixes', 80, 110, '2027-06-12');
+INSERT INTO grocery_items VALUES (48, 'Zaeli Tapioca Pronta 500g', 'Zaeli', 'Grains & Flour', 170, 65, '2027-03-08');
+INSERT INTO grocery_items VALUES (49, 'Piraquê Biscoito Maizena 200g', 'Piraquê', 'Biscuits', 85, 115, '2027-04-22');
+INSERT INTO grocery_items VALUES (50, 'Triunfo Recheado Morango 130g', 'Triunfo', 'Biscuits', 55, 125, '2027-01-30');
+INSERT INTO grocery_items VALUES (51, 'Bauducco Panettone Frutas 400g', 'Bauducco', 'Bakery', 310, 40, '2026-12-25');
+INSERT INTO grocery_items VALUES (52, 'Mabel Biscoito Rosquinha 350g', 'Mabel', 'Biscuits', 110, 70, '2027-05-11');
+INSERT INTO grocery_items VALUES (53, 'Toddy Achocolatado em Pó 370g', 'Toddy', 'Beverages', 185, 80, '2027-08-16');
+INSERT INTO grocery_items VALUES (54, 'Knorr Caldo de Galinha 114g', 'Knorr Brasil', 'Spices', 70, 120, '2027-11-20');
+INSERT INTO grocery_items VALUES (55, 'Hellmanns Mayonnaise 500g', 'Hellmanns', 'Sauces', 220, 60, '2027-04-10');
+INSERT INTO grocery_items VALUES (56, 'Arisco Ketchup Tradicional 380g', 'Arisco', 'Sauces', 110, 85, '2027-07-04');
+INSERT INTO grocery_items VALUES (57, 'Minerva Carne Moída 500g', 'Minerva', 'Frozen', 340, 30, '2027-02-28');
+INSERT INTO grocery_items VALUES (58, 'Seara Salsicha Hot Dog 500g', 'Seara', 'Meats', 190, 50, '2026-11-25');
+INSERT INTO grocery_items VALUES (59, 'Sadia Linguiça Calabresa 400g', 'Sadia', 'Meats', 280, 45, '2026-12-05');
+INSERT INTO grocery_items VALUES (60, 'Perdigão Presunto Cozido 200g', 'Perdigão', 'Meats', 160, 60, '2026-11-18');
+INSERT INTO grocery_items VALUES (61, 'Polenghi Polenguinho 68g', 'Polenghi', 'Dairy', 95, 90, '2027-01-08');
+INSERT INTO grocery_items VALUES (62, 'Tirolez Queijo Minas 500g', 'Tirolez', 'Dairy', 390, 20, '2026-11-30');
+INSERT INTO grocery_items VALUES (63, 'President Queijo Mussarela 150g', 'President', 'Dairy', 180, 40, '2026-11-22');
+INSERT INTO grocery_items VALUES (64, 'Mendonça Doce de Leite 400g', 'Mendonça', 'Sweets', 230, 35, '2027-06-30');
+INSERT INTO grocery_items VALUES (65, 'Itambé Doce de Leite 400g', 'Itambé', 'Sweets', 220, 40, '2027-05-15');
+INSERT INTO grocery_items VALUES (66, 'Yoki Batata Palha 120g', 'Yoki', 'Snacks', 115, 85, '2027-03-01');
+INSERT INTO grocery_items VALUES (67, 'Elma Chips Cheetos 45g', 'Elma Chips', 'Snacks', 70, 150, '2027-01-14');
+INSERT INTO grocery_items VALUES (68, 'Elma Chips Ruffles 76g', 'Elma Chips', 'Snacks', 130, 110, '2027-02-12');
+INSERT INTO grocery_items VALUES (69, 'Elma Chips Doritos 84g', 'Elma Chips', 'Snacks', 140, 105, '2027-02-20');
+INSERT INTO grocery_items VALUES (70, 'Fandangos Milho Presunto 45g', 'Elma Chips', 'Snacks', 65, 130, '2027-01-28');
+INSERT INTO grocery_items VALUES (71, 'Bauducco Pão de Forma 400g', 'Bauducco', 'Bakery', 140, 50, '2026-11-10');
+INSERT INTO grocery_items VALUES (72, 'Wickbold Pão Integral 400g', 'Wickbold', 'Bakery', 170, 40, '2026-11-12');
+INSERT INTO grocery_items VALUES (73, 'Plus Vita Pão de Hot Dog 350g', 'Plus Vita', 'Bakery', 130, 45, '2026-11-08');
+INSERT INTO grocery_items VALUES (74, 'Ninho Leite em Pó 380g', 'Nestlé Brasil', 'Dairy', 310, 75, '2027-09-24');
+INSERT INTO grocery_items VALUES (75, 'Molico Leite em Pó 280g', 'Nestlé Brasil', 'Dairy', 330, 50, '2027-08-19');
+INSERT INTO grocery_items VALUES (76, 'Moça Leite Condensado 395g', 'Nestlé Brasil', 'Dairy', 130, 90, '2027-07-07');
+INSERT INTO grocery_items VALUES (77, 'Garoto Chocolate Ao Leite 80g', 'Garoto', 'Confectionery', 95, 110, '2027-04-05');
+INSERT INTO grocery_items VALUES (78, 'Lacta Chocolate Ao Leite 80g', 'Lacta', 'Confectionery', 95, 105, '2027-04-11');
+INSERT INTO grocery_items VALUES (79, 'Neugebauer Chocolate 80g', 'Neugebauer', 'Confectionery', 85, 95, '2027-03-15');
+INSERT INTO grocery_items VALUES (80, 'Hersheys Chocolate 85g', 'Hersheys', 'Confectionery', 90, 85, '2027-05-01');
+INSERT INTO grocery_items VALUES (81, 'Arcor Paçoca Amor 200g', 'Arcor', 'Confectionery', 120, 70, '2027-06-18');
+INSERT INTO grocery_items VALUES (82, 'Dori Bala de Yogurte 600g', 'Dori', 'Confectionery', 210, 60, '2028-02-28');
+INSERT INTO grocery_items VALUES (83, 'Florestal Bala Freetg 500g', 'Florestal', 'Confectionery', 190, 65, '2028-01-15');
+INSERT INTO grocery_items VALUES (84, 'Yoki Sagú de Mandioca 500g', 'Yoki', 'Grains & Flour', 120, 80, '2027-09-09');
+INSERT INTO grocery_items VALUES (85, 'Camil Lentilha 500g', 'Camil', 'Grains & Pulses', 190, 50, '2027-10-21');
+INSERT INTO grocery_items VALUES (86, 'Kicaldo Grão de Bico 500g', 'Kicaldo', 'Grains & Pulses', 210, 45, '2027-10-30');
+INSERT INTO grocery_items VALUES (87, 'Dona Benta Farinha 1kg', 'Dona Benta', 'Grains & Flour', 130, 100, '2027-08-14');
+INSERT INTO grocery_items VALUES (88, 'Sol Farinha de Trigo 1kg', 'Sol', 'Grains & Flour', 140, 80, '2027-07-19');
+INSERT INTO grocery_items VALUES (89, 'Yoki Polvilho Azedo 500g', 'Yoki', 'Grains & Flour', 160, 75, '2027-06-02');
+INSERT INTO grocery_items VALUES (90, 'Yoki Polvilho Doce 500g', 'Yoki', 'Grains & Flour', 155, 80, '2027-06-02');
+INSERT INTO grocery_items VALUES (91, 'Fante Vinagre Branco 750ml', 'Fante', 'Oils & Condiments', 80, 90, '2028-05-10');
+INSERT INTO grocery_items VALUES (92, 'Castelo Vinagre de Maçã 750ml', 'Castelo', 'Oils & Condiments', 110, 70, '2028-04-12');
+INSERT INTO grocery_items VALUES (93, 'Gallo Azeite Extra Virgem 500ml', 'Gallo', 'Oils & Condiments', 490, 35, '2027-11-11');
+INSERT INTO grocery_items VALUES (94, 'Bunge Soya Óleo Girassol 900ml', 'Bunge', 'Oils & Condiments', 170, 60, '2027-06-20');
+INSERT INTO grocery_items VALUES (95, 'Ades Bebida de Soja 1L', 'Ades', 'Beverages', 150, 65, '2027-03-17');
+INSERT INTO grocery_items VALUES (96, 'Del Valle Suco de Uva 1L', 'Del Valle', 'Beverages', 180, 85, '2027-04-08');
+INSERT INTO grocery_items VALUES (97, 'Kero Coco Água de Coco 1L', 'Kero Coco', 'Beverages', 210, 75, '2027-02-04');
+INSERT INTO grocery_items VALUES (98, 'Indaiá Água Mineral 1.5L', 'Indaiá', 'Beverages', 50, 150, '2028-01-01');
+INSERT INTO grocery_items VALUES (99, 'Minalba Água com Gás 500ml', 'Minalba', 'Beverages', 45, 180, '2028-01-01');
+INSERT INTO grocery_items VALUES (100, 'Crystal Água Mineral 500ml', 'Crystal', 'Beverages', 40, 200, '2028-01-01');
